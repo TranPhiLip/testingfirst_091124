@@ -1,0 +1,96 @@
+/* .container {
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 20px;
+} */
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* .card-body {
+    padding: 20px;
+} */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offset-lg-3 {
+    margin-left: 25%;
+}
+
+.col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.form-check {
+    display: flex; 
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-bottom: 15px; /* Khoảng cách dưới */
+}
+
+.form-check-input {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px; /* Khoảng cách giữa checkbox và nhãn */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+}
+
+.form-check-label {
+    font-size: 16px; 
+    color: #333; 
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+}
+
+/* Thay đổi màu sắc khi checkbox được chọn */
+.form-check-input:checked {
+    background-color: #007bff; 
+    border-color: #007bff; 
+}
+
+/* Thay đổi màu sắc cho nhãn khi checkbox được chọn */
+.form-check-input:checked + .form-check-label {
+    color: #007bff; /* Màu chữ khi checkbox được chọn */
+}

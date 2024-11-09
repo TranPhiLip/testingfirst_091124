@@ -1,0 +1,197 @@
+html,
+body {
+    height: 100%;
+    /* Đảm bảo body và html chiếm toàn bộ chiều cao */
+    margin: 0;
+    /* Loại bỏ margin mặc định */
+}
+
+.container {
+    width: 100%;
+    /* Chiếm toàn bộ chiều rộng */
+    height: 100%;
+    /* Chiếm toàn bộ chiều cao */
+    margin: 0;
+    /* Không có margin */
+    padding: 20px;
+    /* Padding bên trong */
+    text-align: center;
+    /* Căn giữa nội dung */
+    box-sizing: border-box;
+    /* Đảm bảo padding không làm tăng kích thước */
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.table-container {
+    max-height: 400px;
+    /* Chiều cao cố định cho bảng */
+    overflow-y: auto;
+    
+    /* Thêm thanh cuộn dọc khi nội dung vượt quá chiều cao */
+    border: 1px solid #ccc;
+    /* Thêm viền cho bảng */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-bordered {
+    border: 1px solid #ccc;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    /* Màu nền cho header bảng */
+    position: sticky;
+    /* Giữ header cố định */
+    top: 0;
+    /* Đặt vị trí của header ở trên cùng */
+    z-index: 10;
+    /* Đảm bảo rằng header nằm trên các hàng khác */
+}
+
+/* Con lăn trong bảng vừa tạo - .table-container*/
+.table-container::-webkit-scrollbar {
+    width: 6px;
+    /* Có thể bở đoạn này, background-color  */
+    background-color: #F5F5F5;
+
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    /* background-color: #000000; */
+    background-color: #5C6670;
+    ;
+}
+
+.table-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.myevent {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    opacity: 0.9;
+    /* Slightly transparent on hover */
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.divbtn {
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offset-lg-3 {
+    margin-left: 25%;
+}
+
+.col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Media Queries cho Responsive Design */
+@media (max-width: 768px) {
+    .table-container {
+        max-height: 300px;
+        /* Giảm chiều cao cố định cho thiết bị di động */
+    }
+
+    .table th,
+    .table td {
+        padding: 8px;
+        /* Giảm padding cho các ô bảng */
+    }
+
+    .divbtn {
+        flex-direction: column;
+        /* Đặt các nút thành cột trên thiết bị di động */
+        align-items: center;
+        /* Căn giữa các nút */
+    }
+
+    .input {
+        margin-bottom: 10px;
+        /* Thêm khoảng cách dưới input */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 10px;
+        /* Giảm padding cho card trên thiết bị di động nhỏ */
+    }
+
+    .btn {
+        width: 100%;
+        /* Làm cho các nút chiếm toàn bộ chiều rộng */
+        margin-bottom: 10px;
+        /* Thêm khoảng cách dưới các nút */
+    }
+
+    .table th,
+    .table td {
+        font-size: 14px;
+        /* Giảm kích thước font cho các ô bảng trên thiết bị di động nhỏ */
+    }
+}
